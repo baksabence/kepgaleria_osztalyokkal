@@ -1,6 +1,6 @@
 import { kepekLISTA } from "./adat.js";
-import Jatekter from "./jatekter.js";
-import Kartya from "./kartya.js";
+import Jatekter from "./Jatekter.js";
+import Kartya from "./Kartya.js";
 
 const nagyKepELEM = $(".nagykep")
 new Kartya(kepekLISTA[0], nagyKepELEM, kepekLISTA)
