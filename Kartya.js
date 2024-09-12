@@ -1,12 +1,9 @@
 export default class Kartya{
     #kepAdat = {}
     #szuloElem
-    #kepekLista
-    #kepIndex = 0
     constructor(adat, szuloElem){
         this.#kepAdat = adat;
         this.#szuloElem = szuloElem;
-        this.#kepekLista = kepekLista
 
         this.nagyKepMegjelenit()
     }
