@@ -23,21 +23,20 @@ export default class Kartya{
     }
 
     gombokEsemeny() {
-        this.#szuloElem.on("click", ".bal", () => this.elozoKep());
-        this.#szuloElem.on("click", ".jobb", () => this.kovetkezoKep());
+        this.#szuloElem.on("click", ".bal", () => this.elozoKep())
+        this.#szuloElem.on("click", ".jobb", () => this.kovetkezoKep())
       }
     
       elozoKep() {
-        this.#kepIndex =
-          (this.#kepIndex - 1 + this.#kepekLista.length) % this.#kepekLista.length;
-        this.#kepAdat = this.#kepekLista[this.#kepIndex];
-        this.nagyKepMegjelenit();
+        this.#kepIndex = (this.#kepIndex - 1 + this.#kepekLista.length) % this.#kepekLista.length
+        this.#kepAdat = this.#kepekLista[this.#kepIndex]
+        this.nagyKepMegjelenit()
       }
     
       kovetkezoKep() {
-        this.#kepIndex = (this.#kepIndex + 1) % this.#kepekLista.length;
-        this.#kepAdat = this.#kepekLista[this.#kepIndex];
-        this.nagyKepMegjelenit();
+        this.#kepIndex = (this.#kepIndex + 1) % this.#kepekLista.length
+        this.#kepAdat = this.#kepekLista[this.#kepIndex]
+        this.nagyKepMegjelenit()
       }
 
 
